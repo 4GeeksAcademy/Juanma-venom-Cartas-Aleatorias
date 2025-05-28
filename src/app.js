@@ -12,10 +12,8 @@ function generateCard() {
   const bottomSuit = document.getElementById("bottomSuit");
   const cardValue = document.getElementById("cardValue");
 
-  // Remplazar clases anteriores con cada actualización de página.
   card.classList.remove("heart", "diamond", "spade", "club");
 
-  // Asignar clase según el palo
   switch (suit) {
     case "♥":
       card.classList.add("heart");
@@ -31,14 +29,12 @@ function generateCard() {
       break;
   }
 
-  // Establecer contenido
   topSuit.textContent = suit;
   bottomSuit.textContent = suit;
   cardValue.textContent = value;
 }
 
-// Generar carta al cargar
 window.onload = () => {
   generateCard();
-  setInterval(generateCard, 10000); // Cada 10 segundos
+  setInterval(generateCard, 10000);
 };
