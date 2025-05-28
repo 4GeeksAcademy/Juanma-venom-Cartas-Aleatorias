@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <div class="controls">
+    <label>Ancho (px): <input type="number" id="widthInput" placeholder="Ej: 200"></label>
+    <label>Alto (px): <input type="number" id="heightInput" placeholder="Ej: 300"></label>
+    <button onclick="generateCard()">Nueva Carta</button>
+  </div>
   <div id="card" class="card">
     <div class="top-suit" id="topSuit"></div>
     <div class="value" id="cardValue"></div>

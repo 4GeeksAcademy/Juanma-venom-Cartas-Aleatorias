@@ -32,6 +32,11 @@ function generateCard() {
   topSuit.textContent = suit;
   bottomSuit.textContent = suit;
   cardValue.textContent = value;
+
+  const width = document.getElementById("widthInput").value;
+  const height = document.getElementById("heightInput").value;
+  if (width) card.style.width = `${width}px`;
+  if (height) card.style.height = `${height}px`;
 }
 
 window.onload = () => {
